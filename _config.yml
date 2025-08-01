@@ -1,3 +1,5 @@
-theme: jekyll-theme-minimal
-title: Akhil Sai Latchireddi's homepage
-description: Bookmark this to keep an eye on my project updates!
+name: Akhil Sai Latchireddi
+title: Akhil Sai Latchireddi's Portfolio
+description: Personal portfolio website
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
