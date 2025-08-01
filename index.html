@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Akhil Sai Latchireddi's Portfolio - Welcome to my personal website">
-    <title>Akhil Sai Latchireddi | Portfolio</title>
+    <meta name="description" content="Akhil Sai Latchireddi - Software Developer and Open Source Contributor">
+    <title>Akhil Sai Latchireddi | Developer Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Akhil Sai Latchireddi's Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,18 +19,56 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Welcome to my personal website! Here you can find information about my projects and how to contact me.</p>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Akhil Sai Latchireddi</h1>
+            <p class="subtitle">Software Developer & Open Source Enthusiast</p>
+            <div class="cta-buttons">
+                <a href="projects.html" class="cta-button">View Projects</a>
+                <a href="https://github.com/AkhilSaiLatchireddi" class="cta-button github">
+                    <i class="fab fa-github"></i> GitHub Profile
+                </a>
+            </div>
         </section>
-        <section>
-            <h2>Latest Projects</h2>
-            <p>Check out my work in the <a href="projects.html">Projects</a> section.</p>
+
+        <section class="featured-section">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Photo Vault</h3>
+                        <div class="project-stats">
+                            <span><i class="fas fa-code-branch"></i> Node.js</span>
+                        </div>
+                    </div>
+                    <p class="project-description">Secure cloud storage solution for photos with user authentication.</p>
+                    <a href="projects.html" class="learn-more">Learn More →</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Gold Price Tracker</h3>
+                        <div class="project-stats">
+                            <span><i class="fas fa-code-branch"></i> Python</span>
+                        </div>
+                    </div>
+                    <p class="project-description">Track and analyze daily gold prices in India.</p>
+                    <a href="projects.html" class="learn-more">Learn More →</a>
+                </article>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Akhil Sai Latchireddi. All rights reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2025 Akhil Sai Latchireddi. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/AkhilSaiLatchireddi" title="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
     </footer>
     <script src="js/main.js"></script>
 </body>
