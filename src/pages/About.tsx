@@ -242,10 +242,10 @@ const About: React.FC = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Beyond Coding
+              Beyond CI/CD
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              When I'm not immersed in code, here's what keeps me motivated and inspired
+              When I'm not immersed in CI/CD, here's what keeps me motivated and inspired
             </p>
           </motion.div>
 

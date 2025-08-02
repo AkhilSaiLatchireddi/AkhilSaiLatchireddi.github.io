@@ -4,69 +4,94 @@ import { PERSONAL_CONFIG } from '../config/personal';
 
 export const projects: Project[] = [
   {
-    id: 'e-commerce-platform',
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce application with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Stripe'],
+    id: 'photo-vault',
+    title: 'Photo Vault',
+    description: 'Full-stack photo management application with React, Node.js, and MongoDB. Features include user authentication, image uploads, and admin dashboard.',
+    technologies: ['React', 'Node.js', 'Python', 'Express', 'AWS S3', 'Machine Learning', 'AI', 'Github Actions', 'Terraform'],
     imageUrl: '/assets/project1.jpg',
-    githubUrl: 'https://github.com/username/ecommerce-platform',
-    liveUrl: 'https://ecommerce-demo.netlify.app',
+    githubUrl: 'https://github.com/AkhilSaiLatchireddi/photo-vault',
+    liveUrl: 'https://github.com/AkhilSaiLatchireddi/photo-vault',
     featured: true,
   },
   {
-    id: 'task-management-app',
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-    technologies: ['React', 'TypeScript', 'Firebase', 'Material-UI'],
+    id: 'gold-price-tracker',
+    title: 'Gold Price Tracker',
+    description: 'A real-time gold price tracking application with historical data visualization.',
+    technologies: ['Python', 'TypeScript', 'Node.js', 'Machine Learning', 'AI', 'Github Actions', 'Terraform'],
     imageUrl: '/assets/project2.jpg',
-    githubUrl: 'https://github.com/username/task-manager',
-    liveUrl: 'https://task-manager-demo.netlify.app',
+    githubUrl: 'https://github.com/AkhilSaiLatchireddi/gold-prices-tracker',
+    liveUrl: 'https://github.com/AkhilSaiLatchireddi/gold-prices-tracker',
     featured: true,
-  },
-  {
-    id: 'weather-dashboard',
-    title: 'Weather Dashboard',
-    description: 'Real-time weather dashboard with location-based forecasts, interactive maps, and historical weather data visualization.',
-    technologies: ['JavaScript', 'Chart.js', 'OpenWeather API', 'CSS3'],
-    imageUrl: '/assets/project3.jpg',
-    githubUrl: 'https://github.com/username/weather-dashboard',
-    liveUrl: 'https://weather-dashboard-demo.netlify.app',
-    featured: false,
   },
 ];
 
 export const skills: Skill[] = [
-  // Cloud & DevOps
-  { name: 'AWS', level: 95, category: 'cloud' },
-  { name: 'Docker', level: 90, category: 'cloud' },
-  { name: 'Kubernetes', level: 85, category: 'cloud' },
-  { name: 'Terraform', level: 88, category: 'cloud' },
-  { name: 'Jenkins', level: 85, category: 'cloud' },
-  { name: 'GitLab CI/CD', level: 80, category: 'cloud' },
-  
-  // Monitoring & Security
-  { name: 'Prometheus', level: 82, category: 'monitoring' },
-  { name: 'Grafana', level: 80, category: 'monitoring' },
-  { name: 'ELK Stack', level: 75, category: 'monitoring' },
-  { name: 'Datadog', level: 70, category: 'monitoring' },
-  
-  // Scripting & Automation
-  { name: 'Python', level: 90, category: 'languages' },
-  { name: 'Bash', level: 95, category: 'languages' },
-  { name: 'PowerShell', level: 75, category: 'languages' },
-  { name: 'Go', level: 70, category: 'languages' },
-  
-  // Tools & Platforms
-  { name: 'Git', level: 95, category: 'tools' },
-  { name: 'Linux', level: 92, category: 'tools' },
-  { name: 'Ansible', level: 85, category: 'tools' },
-  { name: 'Helm', level: 80, category: 'tools' },
-  { name: 'ArgoCD', level: 75, category: 'tools' },
-  
-  // Frontend (for full-stack understanding)
-  { name: 'React', level: 75, category: 'frontend' },
-  { name: 'JavaScript', level: 80, category: 'frontend' },
-  { name: 'TypeScript', level: 70, category: 'frontend' },
+  // Cloud Platforms & Services
+  { name: 'Amazon Web Services (AWS)', level: 90, category: 'Cloud' },
+  { name: 'Microsoft Azure', level: 70, category: 'Cloud' },
+  { name: 'Google Cloud Platform (GCP)', level: 60, category: 'Cloud' },
+  { name: 'Oracle Cloud Infrastructure (OCI)', level: 40, category: 'Cloud' },
+  // Container Orchestration
+  { name: 'Kubernetes', level: 90, category: 'Container Orchestration' },
+  { name: 'EKS', level: 90, category: 'Container Orchestration' },
+  { name: 'GKE', level: 60, category: 'Container Orchestration' },
+  { name: 'Docker', level: 95, category: 'Container Orchestration' },
+  { name: 'ECS', level: 95, category: 'Container Orchestration' },
+  // Infrastructure as Code
+  { name: 'Terraform', level: 100, category: 'Infrastructure as Code' },
+  { name: 'CloudFormation', level: 100, category: 'Infrastructure as Code' },
+  { name: 'Helm', level: 70, category: 'Infrastructure as Code Tools' },
+  { name: 'Kustomize', level: 70, category: 'Infrastructure as Code Tools' },
+  { name: 'Packer', level: 60, category: 'Infrastructure as Code Tools' },
+  { name: 'Serverless Framework', level: 80, category: 'Infrastructure as Code' },
+  { name: 'AWS CDK', level: 80, category: 'Infrastructure as Code' },
+  { name: 'Boto3', level: 85, category: 'Infrastructure as Code' },
+  // Development & CI/CD Tools
+  { name: 'Jenkins', level: 80, category: 'CI Tools' },
+  { name: 'GitLab CI', level: 70, category: 'CI Tools' },
+  { name: 'GitHub Actions', level: 90, category: 'CI Tools' },
+  { name: 'AWS Developer Tools', level: 90, category: 'CI Tools' },
+  // Programming & Scripting
+  { name: 'Python', level: 70, category: 'languages' },
+  { name: 'Shell/Bash Scripting', level: 85, category: 'languages' },
+  { name: 'Node.js', level: 70, category: 'languages' },
+  { name: 'Groovy (Jenkins)', level: 70, category: 'languages' },
+  // Collaboration & Documentation
+  { name: 'Jira', level: 90, category: 'collaboration' },
+  { name: 'Confluence', level: 90, category: 'collaboration' },
+  { name: 'ServiceNow', level: 60, category: 'collaboration' },
+  { name: 'Slack', level: 90, category: 'collaboration' },
+  { name: 'Microsoft Teams', level: 100, category: 'collaboration' },
+  { name: 'Discord', level: 70, category: 'collaboration' },
+  // Security & Code Quality
+  { name: 'AquaSec', level: 70, category: 'security' },
+  { name: 'Checkmarx', level: 70, category: 'security' },
+  { name: 'HashiCorp Vault', level: 90, category: 'security' },
+  { name: 'KMS', level: 85, category: 'security' },
+  { name: 'WAF', level: 85, category: 'security' },
+  { name: 'SonarQube', level: 70, category: 'security' },
+  // Monitoring & Logging
+  { name: 'New Relic', level: 80, category: 'monitoring' },
+  { name: 'Logz.io', level: 80, category: 'monitoring' },
+  { name: 'Cribl', level: 85, category: 'monitoring' },
+  { name: 'CloudWatch', level: 95, category: 'monitoring' },
+  { name: 'Log Analytics', level: 60, category: 'monitoring' },
+  { name: 'PagerDuty', level: 80, category: 'monitoring' },
+  { name: 'Grafana', level: 60, category: 'monitoring' },
+  { name: 'Prometheus', level: 70, category: 'monitoring' },
+  // Source Code Management
+  { name: 'GitLab', level: 95, category: 'scm' },
+  { name: 'Bitbucket', level: 80, category: 'scm' },
+  { name: 'GitHub', level: 95, category: 'scm' },
+  // AWS/Cloud Services
+  { name: 'AWS Core Services', level: 95, category: 'aws-services' },
+  { name: 'Serverless', level: 92, category: 'aws-services' },
+  { name: 'API Gateway', level: 90, category: 'aws-services' },
+  { name: 'DynamoDB', level: 90, category: 'aws-services' },
+  // Additional Tools
+  { name: 'Kong', level: 60, category: 'tools' },
+  { name: 'Cloud Custodian', level: 70, category: 'tools' },
+  { name: 'QuickSight', level: 60, category: 'tools' },
 ];
 
 // Dynamic social links from config

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { PERSONAL_CONFIG } from '../config/personal';
+import { projects } from '../utils/constants';
 
 const Home: React.FC = () => {
   const scrollToProjects = () => {
@@ -160,9 +161,9 @@ const Home: React.FC = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {[1, 2, 3].map((index) => (
+            {projects.map((project, index) => (
               <motion.div
-                key={index}
+                key={project.id}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -170,34 +171,53 @@ const Home: React.FC = () => {
                 whileHover={{ y: -5 }}
                 className="bg-gray-50 dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <div className="h-48 bg-gradient-to-br from-blue-400 to-purple-500"></div>
+                <div className="h-48 bg-gradient-to-br from-blue-400 to-purple-500">
+                  {project.imageUrl && (
+                    <img 
+                      src={project.imageUrl} 
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  )}
+                </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    Project {index}
+                    {project.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    A brief description of this amazing project and the technologies
-                    used to build it.
+                    {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 text-sm rounded-full">
-                      React
-                    </span>
-                    <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 text-sm rounded-full">
-                      Node.js
-                    </span>
+                    {project.technologies.map((tech) => (
+                      <span 
+                        key={tech}
+                        className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 text-sm rounded-full"
+                      >
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                   <div className="flex space-x-3">
-                    <button
-                      className="text-blue-600 dark:text-blue-400 hover:underline"
-                    >
-                      Live Demo
-                    </button>
-                    <button
-                      className="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
-                    >
-                      GitHub
-                    </button>
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 dark:text-blue-400 hover:underline"
+                      >
+                        Live Demo
+                      </a>
+                    )}
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
+                      >
+                        GitHub
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>
@@ -235,18 +255,18 @@ const Home: React.FC = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
             {[
-              'React',
-              'TypeScript',
-              'Node.js',
-              'Python',
-              'AWS',
-              'MongoDB',
-              'PostgreSQL',
+              'AWS/Azure/GCP',
+              'Kubernetes',
               'Docker',
-              'Git',
-              'Tailwind',
-              'Express',
-              'Next.js',
+              'Terraform',
+              'Github Actions',
+              'Jenkins',
+              'Python/boto3',
+              'Shell/Bash',
+              'Node.js',
+              'CloudFormation',
+              'ECS/EKS',
+              'New Relic',
             ].map((tech, index) => (
               <motion.div
                 key={tech}

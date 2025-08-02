@@ -29,9 +29,12 @@ const Header: React.FC = () => {
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-xl"
             >
-              A
+              <img
+                src={PERSONAL_CONFIG.profileImage}
+                alt={PERSONAL_CONFIG.name}
+                className="w-10 h-10 rounded-lg object-cover border-2 border-transparent hover:border-blue-600 transition-colors duration-200"
+              />
             </motion.div>
             <span className="font-bold text-xl text-gray-900 dark:text-white">
               {PERSONAL_CONFIG.firstName}
