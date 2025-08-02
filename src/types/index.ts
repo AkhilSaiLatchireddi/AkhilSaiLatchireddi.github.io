@@ -40,3 +40,14 @@ export interface Skill {
   level: number;
   category: 'cloud' | 'devops' | 'monitoring' | 'languages' | 'tools' | 'frontend';
 }
+
+export interface Certification {
+  name: string;
+  issuingAuthority: string;
+  issueDate: string;
+  expiryDate?: string;
+  credentialId?: string;
+  verificationUrl?: string;
+  skills: string[];
+  description: string;
+}

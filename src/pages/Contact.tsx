@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Mail, Phone, MapPin, Github, Linkedin, Twitter, CheckCircle, AlertCircle, Loader } from 'lucide-react';
-import { submitContactForm, validateContactForm } from '../utils/api';
+import { Send, Mail, Phone, MapPin, Github, Linkedin, Twitter, CheckCircle, AlertCircle, Loader, ExternalLink } from 'lucide-react';
+import { createGitHubIssue, validateContactForm } from '../utils/github';
 import { ContactFormData } from '../types';
 import { PERSONAL_CONFIG } from '../config/personal';
 
@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
     setSubmitStatus({ type: null, message: '' });
 
     try {
-      const result = await submitContactForm(formData);
+      const result = await createGitHubIssue(formData);
       
       if (result.success) {
         setSubmitStatus({
@@ -148,9 +148,20 @@ const Contact: React.FC = () => {
               transition={{ duration: 0.8 }}
             >
               <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-8">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   Send me a message
                 </h2>
+                
+                <div className="mb-6 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
+                  <div className="flex items-start space-x-3">
+                    <Github className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5" />
+                    <div>
+                      <p className="text-sm text-blue-800 dark:text-blue-200">
+                        <strong>GitHub Issues Integration:</strong> This form will create a GitHub issue in my portfolio repository with your message pre-filled, allowing for transparent communication and better tracking of our conversation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -252,8 +263,8 @@ const Contact: React.FC = () => {
                       </>
                     ) : (
                       <>
-                        <Send size={20} className="mr-2" />
-                        Send Message
+                        <Github size={20} className="mr-2" />
+                        Create GitHub Issue
                       </>
                     )}
                   </motion.button>
