@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Mail, Phone, MapPin, Github, Linkedin, Twitter, CheckCircle, AlertCircle, Loader, ExternalLink } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, CheckCircle, AlertCircle, Loader } from 'lucide-react';
 import { createGitHubIssue, validateContactForm } from '../utils/github';
 import { ContactFormData } from '../types';
 import { PERSONAL_CONFIG } from '../config/personal';

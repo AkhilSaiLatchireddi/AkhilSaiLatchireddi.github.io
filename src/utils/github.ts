@@ -33,9 +33,6 @@ ${formData.message}
     // Try to create the issue using GitHub API
     // Note: This requires a GitHub token, but for public repos we can use the web interface fallback
     try {
-      // First attempt: Try to use GitHub API if token is available (optional)
-      const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/issues`;
-      
       // For security, we'll use the web interface method for now
       // In a production environment, you'd want to use a serverless function with a GitHub token
       throw new Error('Using web interface fallback');
