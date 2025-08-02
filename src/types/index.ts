@@ -38,5 +38,5 @@ export interface SocialLink {
 export interface Skill {
   name: string;
   level: number;
-  category: 'frontend' | 'backend' | 'tools' | 'languages' | 'cloud' | 'monitoring';
+  category: 'cloud' | 'devops' | 'monitoring' | 'languages' | 'tools' | 'frontend';
 }

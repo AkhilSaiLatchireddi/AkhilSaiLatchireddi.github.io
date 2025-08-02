@@ -11,34 +11,40 @@ const About: React.FC = () => {
 
   const skillCategories = [
     {
-      title: 'Cloud & DevOps',
+      title: 'Cloud Platforms',
       icon: Cloud,
       skills: getSkillsByCategory('cloud'),
       color: 'from-blue-500 to-cyan-500',
     },
     {
-      title: 'Monitoring',
-      icon: Activity,
-      skills: getSkillsByCategory('monitoring'),
+      title: 'DevOps & Infrastructure',
+      icon: Wrench,
+      skills: getSkillsByCategory('devops'),
       color: 'from-green-500 to-emerald-500',
     },
     {
-      title: 'Tools',
-      icon: Wrench,
-      skills: getSkillsByCategory('tools'),
-      color: 'from-purple-500 to-pink-500',
+      title: 'Monitoring & Security',
+      icon: Activity,
+      skills: getSkillsByCategory('monitoring'),
+      color: 'from-orange-500 to-red-500',
     },
     {
       title: 'Languages',
       icon: Code,
       skills: getSkillsByCategory('languages'),
-      color: 'from-orange-500 to-red-500',
+      color: 'from-purple-500 to-pink-500',
+    },
+    {
+      title: 'Tools & Platforms',
+      icon: Wrench,
+      skills: getSkillsByCategory('tools'),
+      color: 'from-indigo-500 to-purple-500',
     },
     {
       title: 'Frontend',
       icon: Globe,
       skills: getSkillsByCategory('frontend'),
-      color: 'from-indigo-500 to-purple-500',
+      color: 'from-teal-500 to-blue-500',
     },
   ];
 

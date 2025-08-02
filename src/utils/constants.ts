@@ -27,50 +27,36 @@ export const projects: Project[] = [
 
 export const skills: Skill[] = [
   // Cloud Platforms & Services
-  { name: 'Amazon Web Services (AWS)', level: 90, category: 'Cloud' },
-  { name: 'Microsoft Azure', level: 70, category: 'Cloud' },
-  { name: 'Google Cloud Platform (GCP)', level: 60, category: 'Cloud' },
-  { name: 'Oracle Cloud Infrastructure (OCI)', level: 40, category: 'Cloud' },
-  // Container Orchestration
-  { name: 'Kubernetes', level: 90, category: 'Container Orchestration' },
-  { name: 'EKS', level: 90, category: 'Container Orchestration' },
-  { name: 'GKE', level: 60, category: 'Container Orchestration' },
-  { name: 'Docker', level: 95, category: 'Container Orchestration' },
-  { name: 'ECS', level: 95, category: 'Container Orchestration' },
-  // Infrastructure as Code
-  { name: 'Terraform', level: 100, category: 'Infrastructure as Code' },
-  { name: 'CloudFormation', level: 100, category: 'Infrastructure as Code' },
-  { name: 'Helm', level: 70, category: 'Infrastructure as Code Tools' },
-  { name: 'Kustomize', level: 70, category: 'Infrastructure as Code Tools' },
-  { name: 'Packer', level: 60, category: 'Infrastructure as Code Tools' },
-  { name: 'Serverless Framework', level: 80, category: 'Infrastructure as Code' },
-  { name: 'AWS CDK', level: 80, category: 'Infrastructure as Code' },
-  { name: 'Boto3', level: 85, category: 'Infrastructure as Code' },
-  // Development & CI/CD Tools
-  { name: 'Jenkins', level: 80, category: 'CI Tools' },
-  { name: 'GitLab CI', level: 70, category: 'CI Tools' },
-  { name: 'GitHub Actions', level: 90, category: 'CI Tools' },
-  { name: 'AWS Developer Tools', level: 90, category: 'CI Tools' },
-  // Programming & Scripting
-  { name: 'Python', level: 70, category: 'languages' },
-  { name: 'Shell/Bash Scripting', level: 85, category: 'languages' },
-  { name: 'Node.js', level: 70, category: 'languages' },
-  { name: 'Groovy (Jenkins)', level: 70, category: 'languages' },
-  // Collaboration & Documentation
-  { name: 'Jira', level: 90, category: 'collaboration' },
-  { name: 'Confluence', level: 90, category: 'collaboration' },
-  { name: 'ServiceNow', level: 60, category: 'collaboration' },
-  { name: 'Slack', level: 90, category: 'collaboration' },
-  { name: 'Microsoft Teams', level: 100, category: 'collaboration' },
-  { name: 'Discord', level: 70, category: 'collaboration' },
-  // Security & Code Quality
-  { name: 'AquaSec', level: 70, category: 'security' },
-  { name: 'Checkmarx', level: 70, category: 'security' },
-  { name: 'HashiCorp Vault', level: 90, category: 'security' },
-  { name: 'KMS', level: 85, category: 'security' },
-  { name: 'WAF', level: 85, category: 'security' },
-  { name: 'SonarQube', level: 70, category: 'security' },
-  // Monitoring & Logging
+  { name: 'Amazon Web Services (AWS)', level: 90, category: 'cloud' },
+  { name: 'Microsoft Azure', level: 70, category: 'cloud' },
+  { name: 'Google Cloud Platform (GCP)', level: 60, category: 'cloud' },
+  { name: 'Oracle Cloud Infrastructure (OCI)', level: 40, category: 'cloud' },
+  { name: 'AWS Core Services', level: 95, category: 'cloud' },
+  { name: 'Serverless', level: 92, category: 'cloud' },
+  { name: 'API Gateway', level: 90, category: 'cloud' },
+  { name: 'DynamoDB', level: 90, category: 'cloud' },
+  
+  // DevOps & Infrastructure
+  { name: 'Kubernetes', level: 90, category: 'devops' },
+  { name: 'EKS', level: 90, category: 'devops' },
+  { name: 'GKE', level: 60, category: 'devops' },
+  { name: 'Docker', level: 95, category: 'devops' },
+  { name: 'ECS', level: 95, category: 'devops' },
+  { name: 'Terraform', level: 100, category: 'devops' },
+  { name: 'CloudFormation', level: 100, category: 'devops' },
+  { name: 'Helm', level: 70, category: 'devops' },
+  { name: 'Kustomize', level: 70, category: 'devops' },
+  { name: 'Packer', level: 60, category: 'devops' },
+  { name: 'Serverless Framework', level: 80, category: 'devops' },
+  { name: 'AWS CDK', level: 80, category: 'devops' },
+  { name: 'Boto3', level: 85, category: 'devops' },
+  { name: 'Jenkins', level: 80, category: 'devops' },
+  { name: 'GitLab CI', level: 70, category: 'devops' },
+  { name: 'GitHub Actions', level: 90, category: 'devops' },
+  { name: 'AWS Developer Tools', level: 90, category: 'devops' },
+  { name: 'ArgoCD', level: 70, category: 'devops' },
+  
+  // Monitoring & Security
   { name: 'New Relic', level: 80, category: 'monitoring' },
   { name: 'Logz.io', level: 80, category: 'monitoring' },
   { name: 'Cribl', level: 85, category: 'monitoring' },
@@ -79,19 +65,39 @@ export const skills: Skill[] = [
   { name: 'PagerDuty', level: 80, category: 'monitoring' },
   { name: 'Grafana', level: 60, category: 'monitoring' },
   { name: 'Prometheus', level: 70, category: 'monitoring' },
-  // Source Code Management
-  { name: 'GitLab', level: 95, category: 'scm' },
-  { name: 'Bitbucket', level: 80, category: 'scm' },
-  { name: 'GitHub', level: 95, category: 'scm' },
-  // AWS/Cloud Services
-  { name: 'AWS Core Services', level: 95, category: 'aws-services' },
-  { name: 'Serverless', level: 92, category: 'aws-services' },
-  { name: 'API Gateway', level: 90, category: 'aws-services' },
-  { name: 'DynamoDB', level: 90, category: 'aws-services' },
-  // Additional Tools
+  { name: 'AquaSec', level: 70, category: 'monitoring' },
+  { name: 'Checkmarx', level: 70, category: 'monitoring' },
+  { name: 'HashiCorp Vault', level: 90, category: 'monitoring' },
+  { name: 'KMS', level: 85, category: 'monitoring' },
+  { name: 'WAF', level: 85, category: 'monitoring' },
+  { name: 'SonarQube', level: 70, category: 'monitoring' },
+  
+  // Programming & Scripting
+  { name: 'Python', level: 70, category: 'languages' },
+  { name: 'Shell/Bash Scripting', level: 85, category: 'languages' },
+  { name: 'Node.js', level: 70, category: 'languages' },
+  { name: 'Groovy (Jenkins)', level: 70, category: 'languages' },
+  
+  // Tools & Platforms
+  { name: 'GitLab', level: 95, category: 'tools' },
+  { name: 'Bitbucket', level: 80, category: 'tools' },
+  { name: 'GitHub', level: 95, category: 'tools' },
+  { name: 'Jira', level: 90, category: 'tools' },
+  { name: 'Confluence', level: 90, category: 'tools' },
+  { name: 'ServiceNow', level: 60, category: 'tools' },
+  { name: 'Slack', level: 90, category: 'tools' },
+  { name: 'Microsoft Teams', level: 100, category: 'tools' },
+  { name: 'Discord', level: 70, category: 'tools' },
   { name: 'Kong', level: 60, category: 'tools' },
   { name: 'Cloud Custodian', level: 70, category: 'tools' },
   { name: 'QuickSight', level: 60, category: 'tools' },
+  
+  // Frontend (for full-stack understanding)
+  { name: 'React', level: 75, category: 'frontend' },
+  { name: 'JavaScript', level: 80, category: 'frontend' },
+  { name: 'TypeScript', level: 70, category: 'frontend' },
+  { name: 'HTML5', level: 85, category: 'frontend' },
+  { name: 'CSS3', level: 80, category: 'frontend' },
 ];
 
 // Dynamic social links from config
