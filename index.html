@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Akhil Sai Latchireddi - Software Developer and Open Source Contributor">
-    <title>Akhil Sai Latchireddi | Developer Portfolio</title>
+    <meta name="description" content="Akhil Sai Latchireddi - Software Developer specializing in CI/CD, cloud technologies, and modern web development">
+    <meta name="keywords" content="software developer, CI/CD, DevOps, web development, cloud computing, AWS">
+    <title>Akhil Sai Latchireddi | Software Developer & CI/CD Specialist</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="canonical" href="https://akhilsailatchireddi.github.io/">
 </head>
-<body>
+<body class="page-transition">
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -22,14 +24,52 @@
 
     <main class="container">
         <section class="hero">
-            <img src="assets/AkhilDP2.jpeg" alt="Akhil Sai Latchireddi" class="profile-image">
+            <img src="assets/AkhilDP2.jpeg" alt="Akhil Sai Latchireddi - Software Developer" class="profile-image">
             <h1>Akhil Sai Latchireddi</h1>
-            <p class="subtitle">Software Developer & Open Source Enthusiast</p>
+            <p class="subtitle">Software Developer & CI/CD Enthusiast</p>
+            <p>Building robust applications with modern development practices and cloud-native technologies</p>
             <div class="cta-buttons">
-                <a href="projects.html" class="cta-button">View Projects</a>
-                <a href="https://github.com/AkhilSaiLatchireddi" class="cta-button github">
-                    <i class="fab fa-github"></i> GitHub Profile
+                <a href="projects.html" class="cta-button">
+                    <i class="fas fa-folder-open"></i>
+                    View My Projects
                 </a>
+                <a href="https://github.com/AkhilSaiLatchireddi" class="cta-button github" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                    GitHub Profile
+                </a>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="stat-number">2+</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Technologies Used</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Open Source Contributions</div>
+                </div>
             </div>
         </section>
 
@@ -40,23 +80,133 @@
                     <div class="project-header">
                         <h3>Photo Vault</h3>
                         <div class="project-stats">
-                            <span><i class="fas fa-code-branch"></i> Node.js</span>
+                            <span><i class="fab fa-node-js"></i> Node.js</span>
+                            <span><i class="fas fa-cloud"></i> Cloud Storage</span>
                         </div>
                     </div>
-                    <p class="project-description">Secure cloud storage solution for photos with user authentication.</p>
-                    <a href="projects.html" class="learn-more">Learn More →</a>
+                    <p class="project-description">
+                        A secure cloud storage solution for photos with user authentication, file encryption, 
+                        and seamless integration with popular cloud providers. Features include automated backups, 
+                        sharing capabilities, and responsive design.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/AkhilSaiLatchireddi/photo-vault" class="github-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="projects.html" class="learn-more">Learn More →</a>
+                    </div>
                 </article>
 
                 <article class="project-card">
                     <div class="project-header">
                         <h3>Gold Price Tracker</h3>
                         <div class="project-stats">
-                            <span><i class="fas fa-code-branch"></i> Python</span>
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-chart-line"></i> Analytics</span>
                         </div>
                     </div>
-                    <p class="project-description">Track and analyze daily gold prices in India.</p>
-                    <a href="projects.html" class="learn-more">Learn More →</a>
+                    <p class="project-description">
+                        Real-time gold price tracking application for Indian markets with historical data analysis, 
+                        price trend visualization, and automated alerts. Includes data scraping, processing, 
+                        and interactive dashboards.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/AkhilSaiLatchireddi/gold-prices-tracker" class="github-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="projects.html" class="learn-more">Learn More →</a>
+                    </div>
                 </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>CI/CD Pipeline Templates</h3>
+                        <div class="project-stats">
+                            <span><i class="fab fa-docker"></i> Docker</span>
+                            <span><i class="fas fa-infinity"></i> DevOps</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Collection of reusable CI/CD pipeline templates for various technology stacks. 
+                        Includes GitHub Actions workflows, Docker configurations, and deployment scripts 
+                        for streamlined development processes.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/AkhilSaiLatchireddi" class="github-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="projects.html" class="learn-more">Learn More →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="technologies-section">
+            <h2>Technologies I Work With</h2>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="tech-tags">
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Vue.js</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Sass</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="tech-tags">
+                        <span>Node.js</span>
+                        <span>Python</span>
+                        <span>Express.js</span>
+                        <span>FastAPI</span>
+                        <span>MongoDB</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="tech-tags">
+                        <span>AWS</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>GitHub Actions</span>
+                        <span>Terraform</span>
+                        <span>Jenkins</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="tech-tags">
+                        <span>Git</span>
+                        <span>VS Code</span>
+                        <span>Postman</span>
+                        <span>Figma</span>
+                        <span>JIRA</span>
+                        <span>Slack</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Let's Build Something Amazing Together</h2>
+            <p>
+                I'm always interested in discussing new opportunities, collaborating on exciting projects, 
+                or just connecting with fellow developers. Whether you have a project in mind or want to 
+                explore potential partnerships, I'd love to hear from you.
+            </p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="cta-button">
+                    <i class="fas fa-envelope"></i>
+                    Get in Touch
+                </a>
+                <a href="about.html" class="cta-button github">
+                    <i class="fas fa-user"></i>
+                    Learn More About Me
+                </a>
             </div>
         </section>
     </main>
@@ -65,12 +215,19 @@
         <div class="footer-content">
             <p>&copy; 2025 Akhil Sai Latchireddi. All rights reserved.</p>
             <div class="social-links">
-                <a href="https://github.com/AkhilSaiLatchireddi" title="GitHub Profile">
+                <a href="https://github.com/AkhilSaiLatchireddi" title="GitHub Profile" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/akhilsailatchireddi" title="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:akhilsai.latchireddi@example.com" title="Email" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-envelope"></i>
                 </a>
             </div>
         </div>
     </footer>
+    
     <script src="js/main.js"></script>
 </body>
 </html>
