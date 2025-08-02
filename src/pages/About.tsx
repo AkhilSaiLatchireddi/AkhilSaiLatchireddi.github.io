@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Download, Code, Database, Globe, Wrench, Cloud, Activity } from 'lucide-react';
+import { Download, Code, Globe, Wrench, Cloud, Activity } from 'lucide-react';
 import { skills } from '../utils/constants';
 import { PERSONAL_CONFIG } from '../config/personal';
 
