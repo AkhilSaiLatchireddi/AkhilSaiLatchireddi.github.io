@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the projects and open source contributions by Akhil Sai Latchireddi - Software Developer">
     <link rel="stylesheet" href="css/style.css">
-    <title>Open Source Projects - Akhil Sai Latchireddi</title>
+    <title>Projects - Akhil Sai Latchireddi | Software Developer Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="page-transition">
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -21,42 +22,265 @@
 
     <main class="container">
         <section class="hero">
-            <h1>Open Source Projects</h1>
-            <p>A showcase of projects I've developed and contributed to</p>
+            <h1>My Projects</h1>
+            <p>A showcase of projects I've developed, ranging from web applications to CI/CD tools and data analysis projects</p>
         </section>
 
-        <section class="projects-grid">
-            <article class="project-card">
-                <div class="project-header">
-                    <h2>Photo Vault</h2>
-                    <div class="project-stats">
-                        <span><i class="fas fa-code-branch"></i> Node.js</span>
-                        <span><i class="fas fa-star"></i> Web App</span>
-                    </div>
-                </div>
-                <p class="project-description">A secure web application for storing and managing photos with cloud storage integration and user authentication.</p>
-                <div class="project-links">
-                    <a href="https://github.com/AkhilSaiLatchireddi/photo-vault" class="github-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-            </article>
+        <section class="project-filter">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="data">Data & Analytics</button>
+                <button class="filter-btn" data-filter="devops">DevOps & CI/CD</button>
+                <button class="filter-btn" data-filter="tools">Tools & Utilities</button>
+            </div>
+        </section>
 
-            <article class="project-card">
-                <div class="project-header">
-                    <h2>Gold Price Tracker</h2>
-                    <div class="project-stats">
-                        <span><i class="fas fa-code-branch"></i> Python</span>
-                        <span><i class="fas fa-star"></i> Data</span>
+        <section class="projects-container">
+            <div class="projects-grid">
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-images"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/AkhilSaiLatchireddi/photo-vault" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <p class="project-description">Track and analyze daily gold prices in India with historical data visualization and price trend analysis.</p>
-                <div class="project-links">
-                    <a href="https://github.com/AkhilSaiLatchireddi/gold-prices-tracker" class="github-link">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
-            </article>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h2>Photo Vault</h2>
+                            <div class="project-stats">
+                                <span><i class="fab fa-node-js"></i> Node.js</span>
+                                <span><i class="fas fa-cloud"></i> Cloud Storage</span>
+                                <span><i class="fas fa-shield-alt"></i> Security</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            A secure web application for storing and managing photos with cloud storage integration. 
+                            Features include user authentication, file encryption, automated backups, and sharing capabilities. 
+                            Built with Node.js, Express, and MongoDB with AWS S3 integration.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>End-to-end encryption for file security</li>
+                                <li>AWS S3 integration for scalable storage</li>
+                                <li>User authentication and authorization</li>
+                                <li>Responsive design for all devices</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/AkhilSaiLatchireddi/photo-vault" class="github-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="data">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/AkhilSaiLatchireddi/gold-prices-tracker" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h2>Gold Price Tracker</h2>
+                            <div class="project-stats">
+                                <span><i class="fab fa-python"></i> Python</span>
+                                <span><i class="fas fa-chart-bar"></i> Analytics</span>
+                                <span><i class="fas fa-robot"></i> Automation</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Real-time gold price tracking application for Indian markets with comprehensive data analysis 
+                            and visualization features. Includes historical data collection, trend analysis, price alerts, 
+                            and interactive dashboards for market insights.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Real-time price data scraping</li>
+                                <li>Historical trend analysis</li>
+                                <li>Interactive data visualizations</li>
+                                <li>Automated price alerts via email</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/AkhilSaiLatchireddi/gold-prices-tracker" class="github-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="devops">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/AkhilSaiLatchireddi" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h2>CI/CD Pipeline Templates</h2>
+                            <div class="project-stats">
+                                <span><i class="fab fa-docker"></i> Docker</span>
+                                <span><i class="fab fa-github"></i> GitHub Actions</span>
+                                <span><i class="fas fa-cloud"></i> AWS</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Comprehensive collection of reusable CI/CD pipeline templates for various technology stacks. 
+                            Includes GitHub Actions workflows, Docker configurations, automated testing setups, and deployment 
+                            scripts for streamlined development processes.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Multi-language pipeline templates</li>
+                                <li>Automated testing and deployment</li>
+                                <li>Docker containerization</li>
+                                <li>AWS deployment integration</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/AkhilSaiLatchireddi" class="github-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/AkhilSaiLatchireddi" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h2>Portfolio Website</h2>
+                            <div class="project-stats">
+                                <span><i class="fab fa-html5"></i> HTML5</span>
+                                <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                                <span><i class="fab fa-js"></i> JavaScript</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Modern, responsive portfolio website showcasing my projects and skills. Features include 
+                            contact form with AWS Lambda integration, smooth animations, dark mode support, and 
+                            optimized performance with lazy loading and modern web practices.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Responsive design with modern UI</li>
+                                <li>AWS Lambda contact form integration</li>
+                                <li>Performance optimized</li>
+                                <li>Accessibility focused</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/AkhilSaiLatchireddi/AkhilSaiLatchireddi.github.io" class="github-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="tools">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/AkhilSaiLatchireddi" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h2>Development Tools Collection</h2>
+                            <div class="project-stats">
+                                <span><i class="fab fa-python"></i> Python</span>
+                                <span><i class="fab fa-js"></i> JavaScript</span>
+                                <span><i class="fas fa-terminal"></i> CLI</span>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Collection of utility tools and scripts for development workflow optimization. 
+                            Includes automated setup scripts, code generators, file organizers, and productivity 
+                            enhancers for various development environments.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Project setup automation</li>
+                                <li>Code generation utilities</li>
+                                <li>Development environment scripts</li>
+                                <li>Cross-platform compatibility</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/AkhilSaiLatchireddi" class="github-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="github-section">
+            <div class="github-cta">
+                <h2>Explore More on GitHub</h2>
+                <p>
+                    Check out my GitHub profile for more projects, contributions to open source, 
+                    and collaborative work with the developer community.
+                </p>
+                <a href="https://github.com/AkhilSaiLatchireddi" class="cta-button github" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                    View GitHub Profile
+                </a>
+            </div>
         </section>
     </main>
 
@@ -64,12 +288,16 @@
         <div class="footer-content">
             <p>&copy; 2025 Akhil Sai Latchireddi. All rights reserved.</p>
             <div class="social-links">
-                <a href="https://github.com/AkhilSaiLatchireddi" title="GitHub Profile">
+                <a href="https://github.com/AkhilSaiLatchireddi" title="GitHub Profile" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/akhilsailatchireddi" title="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
     </footer>
+    
     <script src="js/main.js"></script>
 </body>
 </html>
