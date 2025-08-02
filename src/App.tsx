@@ -11,7 +11,7 @@ import { ThemeProvider } from './contexts/ThemeContext';
 function App() {
   return (
     <ThemeProvider>
-      <Router basename={process.env.NODE_ENV === 'production' ? '/AkhilSaiLatchireddi.github.io' : ''}>
+      <Router>
         <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
           <Header />
           
